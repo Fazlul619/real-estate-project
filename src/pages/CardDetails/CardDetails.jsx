@@ -3,9 +3,19 @@ import bedIcon from "../../assets/icon/bed.png";
 import bathIcon from "../../assets/icon/bath.png";
 import sizeIcon from "../../assets/icon/size.png";
 import locationIcon from "../../assets/icon/location.png";
+import { Link } from "react-router-dom";
 const CardDetails = ({ property }) => {
-  const { image, status, estate_title, price, beds, baths, area, location } =
-    property;
+  const {
+    id,
+    image,
+    status,
+    estate_title,
+    price,
+    beds,
+    baths,
+    area,
+    location,
+  } = property;
   return (
     <div>
       <div className="card w-96 bg-base-100 shadow-xl">
@@ -48,9 +58,11 @@ const CardDetails = ({ property }) => {
               <img src={locationIcon} alt="" />
               <p className="text-[#101828]">{location}</p>
             </div>
-            <button className="w-fit h-12 px-3 bg-[#1266E3] rounded-xl text-white">
-              View Details
-            </button>
+            <Link to={`/card/${id}`}>
+              <button className="w-fit h-12 px-3 bg-[#1266E3] rounded-xl text-white">
+                View Details
+              </button>
+            </Link>
           </div>
         </div>
       </div>
