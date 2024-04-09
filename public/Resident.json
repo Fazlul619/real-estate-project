@@ -1,7 +1,7 @@
 [
   {
-    "image": "https://example.com/residential_estate1.jpg",
-    "estate_title": "apartments Villa with Ocean View",
+    "image": "https://i.ibb.co/ydKFb0y/c-1.jpg",
+    "estate_title": "Apartments Villa",
     "id": "1",
     "segment_name": "apartments",
     "description": "Beautiful villa located by the ocean with stunning views.",
@@ -9,12 +9,12 @@
     "status": "sale",
     "beds": "5",
     "baths": "4",
-    "area": "4000 sq ft",
+    "area": "4000",
     "location": "Malibu, California",
     "facilities": ["Infinity Pool", "Gym", "Home Theater"]
   },
   {
-    "image": "https://example.com/residential_estate2.jpg",
+    "image": "https://i.ibb.co/z6hrY8Z/c-2.jpg",
     "estate_title": "Cozy Family Home",
     "id": "2",
     "segment_name": "Family",
@@ -23,12 +23,12 @@
     "status": "sale",
     "beds": "3",
     "baths": "2",
-    "area": "2500 sq ft",
+    "area": "2500",
     "location": "Suburban, New York",
     "facilities": ["Backyard Garden", "Playroom", "Spacious Kitchen"]
   },
   {
-    "image": "https://example.com/residential_estate3.jpg",
+    "image": "https://i.ibb.co/y4jhJcB/c-3.jpg",
     "estate_title": "Modern Loft Downtown",
     "id": "3",
     "segment_name": "Urban",
@@ -37,12 +37,12 @@
     "status": "sale",
     "beds": "3",
     "baths": "1",
-    "area": "1800 sq ft",
+    "area": "1800",
     "location": "Downtown, Chicago",
     "facilities": ["Open Floor Plan", "Roof Deck", "Smart Home Features"]
   },
   {
-    "image": "https://example.com/residential_estate4.jpg",
+    "image": "https://i.ibb.co/TvWm6CD/c-4.jpg",
     "estate_title": "Riverside Retreat",
     "id": "4",
     "segment_name": "Nature",
@@ -51,12 +51,12 @@
     "status": "sale",
     "beds": "3",
     "baths": "3",
-    "area": "3000 sq ft",
+    "area": "3000",
     "location": "Riverside, Oregon",
     "facilities": ["Riverfront Deck", "Fire Pit", "Hiking Trails Access"]
   },
   {
-    "image": "https://example.com/residential_estate5.jpg",
+    "image": "https://i.ibb.co/VL4cxzb/c-5.jpg",
     "estate_title": "Historic Brownstone",
     "id": "5",
     "segment_name": "Heritage",
@@ -65,12 +65,12 @@
     "status": "sale",
     "beds": "4",
     "baths": "3",
-    "area": "3500 sq ft",
+    "area": "3500",
     "location": "Brooklyn, New York",
     "facilities": ["Rooftop Terrace", "Fireplace", "Library"]
   },
   {
-    "image": "https://example.com/residential_estate6.jpg",
+    "image": "https://i.ibb.co/NSSV4KP/c-6.jpg",
     "estate_title": "Mountain Retreat Cabin",
     "id": "6",
     "segment_name": "Scenic",
@@ -79,12 +79,12 @@
     "status": "sale",
     "beds": "3",
     "baths": "1",
-    "area": "2000 sq ft",
+    "area": "2000",
     "location": "Aspen, Colorado",
     "facilities": ["Wraparound Deck", "Hot Tub", "Ski Access"]
   },
   {
-    "image": "https://example.com/residential_estate7.jpg",
+    "image": "https://i.ibb.co/t8VcbT8/c-7.jpg",
     "estate_title": "Garden Oasis",
     "id": "7",
     "segment_name": "Tranquil",
@@ -93,12 +93,12 @@
     "status": "sale",
     "beds": "3",
     "baths": "1",
-    "area": "2800 sq ft",
+    "area": "2800",
     "location": "Savannah, Georgia",
     "facilities": ["Koi Pond", "Outdoor Kitchen", "Yoga Studio"]
   },
   {
-    "image": "https://example.com/residential_estate8.jpg",
+    "image": "https://i.ibb.co/2n9X4Fr/c-8.jpg",
     "estate_title": "Lakefront Cottage",
     "id": "8",
     "segment_name": "Waterfront",
@@ -107,12 +107,12 @@
     "status": "sale",
     "beds": "3",
     "baths": "2",
-    "area": "2200 sq ft",
+    "area": "2200",
     "location": "Lake Tahoe, Nevada",
     "facilities": ["Private Dock", "Boat House", "Outdoor Fireplace"]
   },
   {
-    "image": "https://example.com/residential_estate9.jpg",
+    "image": "https://i.ibb.co/gdKx6b1/c-9.jpg",
     "estate_title": "Elegant Townhouse",
     "id": "9",
     "segment_name": "Classic",
@@ -121,8 +121,8 @@
     "status": "sale",
     "beds": "3",
     "baths": "3",
-    "area": "3200 sq ft",
-    "location": "Georgetown, Washington D.C.",
+    "area": "3200",
+    "location": "Georgetown, Washington",
     "facilities": ["Private Courtyard", "Wine Cellar", "Study"]
   }
 ]
