@@ -70,6 +70,21 @@ const EstateDetails = () => {
             </p>
           </div>
         </div>
+        <div className="card max-w-7xl mx-auto bg-base-100 shadow-xl my-6 border">
+          <div className="card-body">
+            <p className="text-[#2D3954] font-bold text-2xl">Description</p>
+            <p className="flex items-center gap-3">
+              {estate.facilities.map((facilities, Idx) => (
+                <spn key={Idx}>
+                  <p className="text-[#2D3954] bg-[#D2E4FF]  rounded-xl font-bold px-3 ">
+                    #{facilities}
+                  </p>
+                </spn>
+              ))}
+            </p>
+            <p className="text-xl">{estate.description}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
