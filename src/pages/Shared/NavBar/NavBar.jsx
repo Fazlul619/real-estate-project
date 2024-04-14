@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProviders";
-
+import HomeIcon from "../../../assets/icon/HomeIcon.png";
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleSignOut = () => {
@@ -18,11 +18,17 @@ const NavBar = () => {
       <li>
         <NavLink to="/register"> Register</NavLink>
       </li>
+      <li>
+        <NavLink to="/userProfile">User Profile</NavLink>
+      </li>
+      <li>
+        <NavLink to="/updateProfile">Update Profile</NavLink>
+      </li>
     </>
   );
   return (
     <div>
-      <div className="navbar bg-base-100 mt-4">
+      <div className="navbar bg-[#FFFFFF] shadow-xl mt-4">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -48,6 +54,7 @@ const NavBar = () => {
               {navLink}
             </ul>
           </div>
+          <img src={HomeIcon} alt="" />
           <a className="btn btn-ghost text-xl">D.S.Properties</a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -65,7 +72,7 @@ const NavBar = () => {
                 alt="Tailwind CSS Navbar component"
                 src={
                   user?.photoURL ??
-                  "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                  "https://i.ibb.co/5TQhjSJ/wise-minds-clothing-Nr-F4-Dw4-BG5-Q-unsplash.jpg"
                 }
               />
             </div>

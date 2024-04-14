@@ -3,7 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProviders";
 import { FcGoogle } from "react-icons/fc";
 import { FaGitlab } from "react-icons/fa";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Login = () => {
   const { signIn, GoogleSignIn, GitHubSignIn } = useContext(AuthContext);
   const location = useLocation();
@@ -16,6 +17,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.error(error);
+        toast.error(error.message);
       });
   };
   const handleGitHubSignIn = () => {
@@ -26,6 +28,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.error(error);
+        toast.error(error.message);
       });
   };
   const handleLogin = (e) => {
@@ -40,9 +43,11 @@ const Login = () => {
 
         // navigate after login
         navigate(location?.state ? location.state : "/");
+        toast.success("User Created Successfully");
       })
       .catch((error) => {
         console.error(error);
+        toast.error(error.message);
       });
   };
   return (
@@ -102,6 +107,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -5,6 +5,8 @@ import Login from "../pages/Shared/Login/Login";
 import Register from "../pages/Shared/Register/Register";
 import EstateDetails from "../pages/EstateDetails/EstateDetails";
 import PrivateRoutes from "./PrivateRoutes";
+import UserProfile from "../pages/User Profile/UserProfile";
+import UpdateProfile from "../pages/Update Profile/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,22 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: () => fetch("../../Resident.json"),
+      },
+      {
+        path: "/userProfile",
+        element: (
+          <PrivateRoutes>
+            <UserProfile></UserProfile>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/updateProfile",
+        element: (
+          <PrivateRoutes>
+            <UpdateProfile></UpdateProfile>
+          </PrivateRoutes>
+        ),
       },
     ],
   },
