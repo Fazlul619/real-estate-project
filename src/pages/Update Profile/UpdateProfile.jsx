@@ -1,10 +1,18 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet";
 const UpdateProfile = () => {
   const { updateUserProfile } = useContext(AuthContext);
   const [isEmailDisabled, setIsEmailDisabled] = useState(true);
+
+  const [title, setTitle] = useState("UPDATE PROFILE PAGE");
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+
   const handleEmailChange = (e) => {
     setIsEmailDisabled(e.target.value);
   };
@@ -30,6 +38,10 @@ const UpdateProfile = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
+
       <div className="hero min-h-screen bg-base-200">
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form onSubmit={handleUpdateProfile} className="card-body">

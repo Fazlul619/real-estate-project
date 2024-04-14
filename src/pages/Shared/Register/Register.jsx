@@ -1,15 +1,20 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProviders";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { Helmet } from "react-helmet";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 const Register = () => {
   const { createUser } = useContext(AuthContext);
   const [registerError, setRegisterError] = useState(" ");
   const [registerSuccess, setRegisterSuccess] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+
+  const [title, setTitle] = useState("REGISTER PAGE");
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -47,6 +52,9 @@ const Register = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className="hero min-h-screen bg-base-200">
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form onSubmit={handleRegister} className="card-body">

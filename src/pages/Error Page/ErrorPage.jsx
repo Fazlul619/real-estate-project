@@ -1,10 +1,19 @@
 import { Link } from "react-router-dom";
 import NavBar from "../Shared/NavBar/NavBar";
 import Footer from "../Footer/Footer";
-
+import { Helmet } from "react-helmet";
+import { useEffect, useState } from "react";
 const ErrorPage = () => {
+  const [title, setTitle] = useState("404 ERROR PAGE");
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <NavBar></NavBar>
       <div>
         <div className="card w-96 bg-base-100 shadow-xl mx-auto mt-36 border">

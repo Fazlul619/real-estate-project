@@ -3,14 +3,25 @@ import locationIcon from "../../assets/icon/location.png";
 import bedIcon from "../../assets/icon/bed.png";
 import bathIcon from "../../assets/icon/bath.png";
 import sizeIcon from "../../assets/icon/size.png";
+import { Helmet } from "react-helmet";
+import { useEffect, useState } from "react";
+
 const EstateDetails = () => {
   const estates = useLoaderData();
   const { id } = useParams();
   const estate = estates.find((estate) => estate.id === id);
   console.log(estate);
+  const [title, setTitle] = useState("ESTATE DETAILS PAGE");
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
   return (
     <div>
       <div>
+        <Helmet>
+          <title>{title}</title>
+        </Helmet>
         <div className=" max-w-7xl mx-auto">
           <img className="rounded-xl w-full" src={estate.image} alt="" />
         </div>

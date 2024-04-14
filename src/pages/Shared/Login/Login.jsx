@@ -1,14 +1,23 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProviders";
 import { FcGoogle } from "react-icons/fc";
 import { FaGitlab } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet";
+
 const Login = () => {
   const { signIn, GoogleSignIn, GitHubSignIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+
+  const [title, setTitle] = useState("LOGIN PAGE");
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+
   const handleGoogleSignIn = () => {
     GoogleSignIn()
       .then((result) => {
@@ -52,6 +61,9 @@ const Login = () => {
   };
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className="hero min-h-screen bg-base-200">
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form onSubmit={handleLogin} className="card-body">

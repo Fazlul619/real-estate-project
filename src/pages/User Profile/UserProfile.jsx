@@ -1,12 +1,22 @@
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 const UserProfile = () => {
   const { user } = useContext(AuthContext);
-  console.log(user);
+  const [title, setTitle] = useState("USER PROFILE PAGE");
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className="card w-96 bg-base-100 shadow-xl mt-24 mx-auto border">
         <figure className="px-10 pt-10">
           <img
