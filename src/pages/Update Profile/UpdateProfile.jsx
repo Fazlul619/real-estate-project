@@ -54,7 +54,7 @@ const UpdateProfile = () => {
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="input input-bordered disabled"
+                className="input input-bordered"
                 onChange={handleEmailChange}
                 disabled={isEmailDisabled}
               />

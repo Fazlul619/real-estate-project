@@ -7,11 +7,13 @@ import EstateDetails from "../pages/EstateDetails/EstateDetails";
 import PrivateRoutes from "./PrivateRoutes";
 import UserProfile from "../pages/User Profile/UserProfile";
 import UpdateProfile from "../pages/Update Profile/UpdateProfile";
+import ErrorPage from "../pages/Error Page/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
