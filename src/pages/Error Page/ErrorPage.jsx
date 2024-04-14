@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import NavBar from "../Shared/NavBar/NavBar";
+import Footer from "../Footer/Footer";
 
 const ErrorPage = () => {
   return (
@@ -27,6 +28,7 @@ const ErrorPage = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
