@@ -8,6 +8,7 @@ import PrivateRoutes from "./PrivateRoutes";
 import UserProfile from "../pages/User Profile/UserProfile";
 import UpdateProfile from "../pages/Update Profile/UpdateProfile";
 import ErrorPage from "../pages/Error Page/ErrorPage";
+import ContactUs from "../pages/Contact Us/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoutes>
             <UpdateProfile></UpdateProfile>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/contactUs",
+        element: (
+          <PrivateRoutes>
+            <ContactUs></ContactUs>
           </PrivateRoutes>
         ),
       },

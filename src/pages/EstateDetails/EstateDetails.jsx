@@ -93,6 +93,9 @@ const EstateDetails = () => {
                 </spn>
               ))}
             </p>
+            <p className="text-[#2D3954] bg-[#D2E4FF]  rounded-xl font-bold px-3 w-fit ">
+              **{estate.segment_name}**
+            </p>
             <p className="text-xl">{estate.description}</p>
           </div>
         </div>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image_url": "https://i.ibb.co/FwrtqQv/Liverpool-California.jpg",
+    "place_name": "Liverpool, California",
+    "property_count": 5
+  },
+  {
+    "id": 2,
+    "image_url": "https://i.ibb.co/V27m4mt/New-Orleans-Louisiana.jpg",
+    "place_name": "New Orleans, Louisiana",
+    "property_count": 2
+  },
+  {
+    "id": 3,
+    "image_url": "https://i.ibb.co/k8Kt7h1/Queens-New-York.jpg",
+    "place_name": "Queens, New York",
+    "property_count": 6
+  },
+  {
+    "id": 4,
+    "image_url": "https://i.ibb.co/X76PHN0/Brooklyn-New-York.jpg",
+    "place_name": "Brooklyn, New York",
+    "property_count": 8
+  },
+  {
+    "id": 5,
+    "image_url": "https://i.ibb.co/RDN7TXS/San-Francisco-California.jpg",
+    "place_name": "San Francisco, California",
+    "property_count": 12
+  },
+  {
+    "id": 6,
+    "image_url": "https://i.ibb.co/RQZvdgw/Dunao-California.jpg",
+    "place_name": "Dunao, California",
+    "property_count": 9
+  }
+]

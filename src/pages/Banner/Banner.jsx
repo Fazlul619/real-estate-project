@@ -46,7 +46,7 @@ const Banner = () => {
             </a>
           </div>
         </div>
-        <div className="hidden lg:block lg:absolute top-[50%] left-[24%] z-10 w-[1000px] p-4 ">
+        <div className="hidden lg:block lg:absolute top-[41%] left-[22%] z-10 w-[1000px] p-4 ">
           <h1 className="text-[#2D3954] font-normal text-6xl text-center ">
             Find Your <span className="font-bold">Perfect House</span>
           </h1>
