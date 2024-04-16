@@ -17,7 +17,7 @@ const CustomersReview = () => {
         <h1 className="font-bold text-3xl text-[#2D3954]">
           Good Reviews By Customers
         </h1>
-        <p className="font-normal ">
+        <p className="font-normal">
           Customers reviews are like windows into the soul of a business,
           revealing its strengths, weaknesses, and the lasting impact it leaves
           on those it serves.
