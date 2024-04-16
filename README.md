@@ -24,7 +24,7 @@ This project utilizes various dependencies to enhance its functionality and desi
 
 ## Website
 
-Check out the live version of Dream State Property at [dreamstateproperty.com](https://www.dreamstateproperty.com).
+Check out the live version of Dream State Property at [dreamstateproperty.com](https://661edff49005a67a2e0c60c3--creative-valkyrie-4b8e3c.netlify.app/).
 
 ## Getting Started
 
