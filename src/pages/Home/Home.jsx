@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import FindUs from "../Find Us Section/FindUs";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import CustomersReview from "../CustomersReview/CustomersReview";
 // ..
 AOS.init();
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       <Banner></Banner>
       <Card></Card>
       <FindUs></FindUs>
+      <CustomersReview></CustomersReview>
     </div>
   );
 };

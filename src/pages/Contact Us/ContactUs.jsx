@@ -1,13 +1,12 @@
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import { FaHome } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
+
 const ContactUs = () => {
   const [title, setTitle] = useState("CONTACT US PAGE");
 
   useEffect(() => {
-    // Update the title and icon path when the component mounts
     document.title = title;
   }, [title]);
 
