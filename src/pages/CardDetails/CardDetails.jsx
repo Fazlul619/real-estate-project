@@ -20,7 +20,13 @@ const CardDetails = ({ property }) => {
     <div>
       <div className="card w-96 bg-base-100 shadow-xl">
         <figure>
-          <img src={image} alt="Shoes" />
+          <img
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1000"
+            src={image}
+            alt="card"
+          />
         </figure>
         <div className="card-body">
           <div className="flex items-center bg-[#D2E4FF] w-fit  rounded-full mt-2">

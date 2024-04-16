@@ -1,4 +1,3 @@
-import { key } from "localforage";
 import { useEffect, useState } from "react";
 
 const FindUs = () => {
@@ -24,7 +23,13 @@ const FindUs = () => {
             className="card card-compact w-96 bg-base-100 border-2 "
           >
             <figure>
-              <img src={location.image_url} alt="Location" />
+              <img
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="1000"
+                src={location.image_url}
+                alt="Location"
+              />
             </figure>
             <div className="card-body m-5">
               <h2 className="font-bold  text-[#2D3954]">
